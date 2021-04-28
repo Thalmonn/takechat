@@ -8,13 +8,13 @@
 <br />
 <p align="center">
   <a href="https://github.com/Thalmonn/takechat">
-    <img src="" alt="Logo" width="80" height="80">
+    <img src="https://github.com/Thalmonn/takechat/blob/main/assets/img/takelogopurple.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Take Chat</h3>
 
   <p align="center">
-    A Discord bot that allows you to match with people to watch movies and TV shows. Also allow to seek data about the content of schedule.
+    A chatbot using builder from BLiP to show github repositories.
     <br />
     <a href="https://github.com/Thalmonn/takechat/issues">Report Bug</a>
     ·
@@ -38,6 +38,8 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+
+Project created for technical evaluative activity, looking for present a way to display in the chatbot a carousel with five `Take` repositories that use C#, filtering by the date of creation in ascending order.
 
 <!-- LICENSE -->
 ## License
