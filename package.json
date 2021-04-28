@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1"
+  },
+  "engines": {
+    "node": "16.0.0"
+  },
+  "scripts": {
+    "start": "node api/app.js"
+  }
+}
