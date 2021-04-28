@@ -1,7 +1,7 @@
 const fetch = require('node-fetch');
 const express = require('express');
 const app = express();
-const port = 8080;
+const port = process.env.PORT || 3000;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -40,5 +40,5 @@ app.get('/takenet/repos', async (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`App listening at http://localhost:${port}`);
+    console.log(`App listening at ${port}`);
 });
