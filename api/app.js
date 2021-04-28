@@ -16,7 +16,7 @@ function generateURL() {
   return url;
 }
 
-// Return an array with 5 C# repositories from Take in asceding order by creation date.
+// Return an Object with 5 C# repositories from Take in asceding order by creation date.
 async function getRepositories() {
   const url = generateURL();
 
@@ -26,7 +26,12 @@ async function getRepositories() {
     const reposCSharp = repos
       .filter(obj => obj.language === 'C#')
       .slice(0, 5)
-      .reverse();
+      .reverse()
+      .reduce((result, item, index) => {
+        result[`repo_${index}`] = item;
+        return result;
+      }, {});
+
     return reposCSharp;
   } catch (err) {
     console.error(err);
@@ -40,5 +45,5 @@ app.get('/takenet/repos', async (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`App listening at ${port}`);
+    console.log(`App listening at port: ${port}`);
 });
